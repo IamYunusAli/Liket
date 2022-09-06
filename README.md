@@ -11,7 +11,7 @@
 
 ## Live Demo
 
-[View live here]()
+[View live here](https://liket.netlify.app/)
 
 ## Getting Started
 
