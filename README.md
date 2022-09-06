@@ -57,7 +57,8 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse team and the mentors
-
+- Desing inspiration [Nelson Sakwa](https://www.behance.net/sakwadesignstudio)
+- free API from [Coingecko](https://www.coingecko.com/)
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
