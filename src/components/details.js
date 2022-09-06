@@ -22,46 +22,40 @@ const CoinDetails = () => {
       </NavLink>
       <div className="detail">
         <img className="big-logo " src={coin.image} alt="logo" />
-        <div className="row">
-          <p>
-            Name:
-            {Space + coin.name}
-          </p>
-          <p>
-            Symbol:
-            {Space + coin.symbol}
-          </p>
-        </div>
-        <div className="row">
-          <p>
-            Rank:
-            {Space + coin.market_cap_rank}
-          </p>
-          <p>
-            Market Cap:
-            {Space + coin.market_cap}
-          </p>
-        </div>
-        <div className="row">
-          <p>
-            All Time low:
-            {Space + coin.atl}
-          </p>
-          <p>
-            All Time High:
-            {Space + coin.ath}
-          </p>
-        </div>
-        <div className="row">
-          <p>
-            24H Low:
-            {Space + coin.low_24h}
-          </p>
-          <p>
-            24H High:
+        <ul className="detail-list">
+          <li>
+            <p>Name:</p>
+            <p>{Space + coin.name}</p>
+          </li>
+          <li>
+            <p>Symbol:</p>
+            <p>{Space + coin.symbol}</p>
+          </li>
+          <li>
+            <p>Rank:</p>
+            <p>{Space + coin.market_cap_rank}</p>
+          </li>
+          <li>
+            <p>Market Cap:</p>
+            <p>{Space + coin.market_cap}</p>
+          </li>
+          <li>
+            <p>All Time low:</p>
+            <p>{Space + coin.atl}</p>
+          </li>
+          <li>
+            <p>All Time High:</p>
+            <p>{Space + coin.ath}</p>
+          </li>
+          <li>
+            <p>24H Low:</p>
+            <p>{Space + coin.low_24h}</p>
+          </li>
+          <li>
+            <p>24H High:</p>
             {Space + coin.high_24h}
-          </p>
-        </div>
+          </li>
+        </ul>
       </div>
     </>
   );
