@@ -30,13 +30,19 @@ const CoinApp = () => {
       <ul className="all-item">
         {filteredCoins.map((coin) => (
           <NavLink key={coin.id} to={`details/${coin.id}`}>
-            <li className={`list-item ${coin.market_cap_rank % 2 === 0 ? 'bg' : ''}`}>
-              <p className="rank">{ coin.market_cap_rank }</p>
-              <p className="name">{ coin.name }</p>
-              <p className="symbol">{ coin.symbol }</p>
-              <img className="coin-logo " src={coin.image} alt="logo" />
-              <p className="current_price">{coin.current_price}</p>
-              <BsArrowRightCircle className="arrow-icon" size="20" />
+            <li className={`list-item ${coin.market_cap_rank % 3 === 1 ? 'bg' : ''}`}>
+              <div className="first">
+                <p className="name">{ coin.name }</p>
+                <BsArrowRightCircle className="arrow-icon" size="20" />
+              </div>
+              <div className="items">
+                <p className="rank">{ coin.market_cap_rank }</p>
+                <p className="symbol">{ coin.symbol }</p>
+              </div>
+              <div className="items">
+                <img className="coin-logo " src={coin.image} alt="logo" />
+                <p className="current_price">{coin.current_price}</p>
+              </div>
             </li>
           </NavLink>
 
