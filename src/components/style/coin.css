@@ -32,7 +32,6 @@ input::placeholder {
   flex-direction: column;
   align-items: center;
   list-style-type: none;
-  background-color: #4369b2;
   color: #fff;
   padding-left: 5px;
   flex-wrap: wrap;
@@ -41,6 +40,35 @@ input::placeholder {
 .list-item:hover {
   background-color: #6097fc;
   color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.all-item a:nth-child(odd) {
+  background-color: #6097fc;
+}
+
+.all-item a:nth-child(3n) {
+  background-color: #4369b2;
+}
+
+.all-item a:nth-child(even) {
+  background-color: #6097fc;
+}
+
+.all-item a:nth-child(2),
+.all-item a:nth-child(7),
+.all-item a:nth-child(6),
+.all-item a:nth-child(10),
+.all-item a:nth-child(11),
+.all-item a:nth-child(14) {
+  background-color: #4369b2;
+}
+
+.all-item a:nth-child(9) {
+  background-color: #6097fc;
 }
 
 .first,
@@ -71,12 +99,4 @@ input::placeholder {
 .rank,
 .arrow-icon {
   width: 23%;
-}
-
-a {
-  text-decoration: none;
-}
-
-.bg {
-  background-color: #6097fc;
 }

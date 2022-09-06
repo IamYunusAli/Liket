@@ -40,6 +40,6 @@ li {
   width: 100%;
 }
 
-.detail-list li:nth-child(odd) {
+.detail-list li:nth-child(even) {
   background-color: #6097fc;
 }

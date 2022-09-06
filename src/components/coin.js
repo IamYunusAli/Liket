@@ -30,7 +30,7 @@ const CoinApp = () => {
       <ul className="all-item">
         {filteredCoins.map((coin) => (
           <NavLink key={coin.id} to={`details/${coin.id}`}>
-            <li className={`list-item ${coin.market_cap_rank % 3 === 1 ? 'bg' : ''}`}>
+            <li className="list-item">
               <div className="first">
                 <p className="name">{ coin.name }</p>
                 <BsArrowRightCircle className="arrow-icon" size="20" />
