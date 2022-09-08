@@ -1,0 +1,25 @@
+header {
+  text-align: center;
+  background-color: #4369b2;
+  color: #fff;
+}
+
+ul,
+ul p {
+  margin-top: 0;
+  padding: 5px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50%;
+  padding-right: 2%;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}

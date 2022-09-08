@@ -1,0 +1,45 @@
+* {
+  color: #fff;
+}
+
+.back-Arrow {
+  position: absolute;
+  top: 3%;
+  left: 2%;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2%;
+}
+
+.big-logo {
+  height: 100px;
+  background-color: #6097fc;
+  border-radius: 50%;
+  padding: 9px;
+}
+
+li {
+  list-style: none;
+}
+
+.detail-list {
+  width: 100%;
+}
+
+.detail-list li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 10%;
+  width: 100%;
+}
+
+.detail-list li:nth-child(even) {
+  background-color: #6097fc;
+}

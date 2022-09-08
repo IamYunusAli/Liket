@@ -1,0 +1,102 @@
+.coinlist {
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.all-item {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 30%;
+  gap: 10px;
+}
+
+input {
+  padding-left: 10px;
+  width: 20%;
+  height: 30px;
+  border-radius: 4px;
+  border: none;
+  background-color: #6097fc;
+  color: #fff;
+  justify-items: center;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  color: #fff;
+  padding-left: 5px;
+  flex-wrap: wrap;
+}
+
+.list-item:hover {
+  background-color: #6097fc;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.all-item a:nth-child(odd) {
+  background-color: #6097fc;
+}
+
+.all-item a:nth-child(3n) {
+  background-color: #4369b2;
+}
+
+.all-item a:nth-child(even) {
+  background-color: #6097fc;
+}
+
+.all-item a:nth-child(2),
+.all-item a:nth-child(7),
+.all-item a:nth-child(6),
+.all-item a:nth-child(10),
+.all-item a:nth-child(11),
+.all-item a:nth-child(14) {
+  background-color: #4369b2;
+}
+
+.all-item a:nth-child(9) {
+  background-color: #6097fc;
+}
+
+.first,
+.items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.items {
+  justify-content: space-evenly;
+}
+
+.arrow-icon {
+  position: relative;
+  right: 0;
+}
+
+.coin-logo {
+  height: 30px;
+}
+
+.name,
+.symbol,
+.current_price,
+.rank,
+.arrow-icon {
+  width: 23%;
+}
